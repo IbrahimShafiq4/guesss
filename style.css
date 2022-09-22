@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+* {
+    padding: 0;
+    box-sizing: inherit;
+    margin: 0;
+    font-family: 'Press Start 2P', sans-serif;
+
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    color: #eee;
+    background-color: #222;
+    transition: 0.2s linear;
+}
+
+header {
+    position: relative;
+    height: 35vh;
+    border-bottom: 7px solid #eee;
+    
+}
+
+@media (max-width: 767px) {
+    header {
+        height: 34vh;
+    }
+
+    h1 {
+        font-size: 1.5rem !important;
+    }
+}
+
+main {
+    height: 65vh;
+    color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.left {
+    width: 52rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.right {
+    width: 52rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+@media (max-width: 767px) {
+    .left, .right {
+        width: calc(52rem / 2)
+    }
+}
+
+.right > p {
+    margin-bottom: 15px;
+}
+
+.right .message {
+    margin-bottom: 140px;
+    letter-spacing: -1px;
+}
+
+@media (max-width: 767px) {
+    .right > p {
+        margin-bottom: 8px;
+        font-size: 12px;
+        line-height: 1.8
+    }
+
+    .right .message {
+        margin-bottom: 50px;
+    }
+}
+
+header h1 {
+    font-size: 4rem;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.number {
+    background-color: #eee;
+    color: #333;
+    font-size: 6rem;
+    width: 15rem;
+    padding: 3rem 0rem;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    transition: 0.2s linear;
+}
+
+.heaer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4vh 6vh;
+}
+
+.heaer .between {
+    order: 1;
+}
+
+@media (max-width: 767px) {
+    .heaer {
+        padding: 2vh 3vh;
+    }
+
+    .heaer .btn, 
+    .left .btn {
+        font-size: 15px;
+        padding: 1rem
+    }
+}
+
+input {
+    background-color: transparent;
+    border: 5px solid #eee;
+    width: 50%;
+    height: 150px; 
+    padding: 50px;
+    font-size: 50px;
+    margin-bottom: 40px;
+    color: #eee;
+    text-align: center;
+    transition: 0.2s linear;
+} 
+
+@media (max-width: 767px) {
+    input {
+        width: 75%;
+        height: 75px;
+        font-size: 25px !important;
+        padding: 15px;
+    }
+}
+
+input:focus {
+    border: 5px solid #deb887; 
+    outline: 0;
+    border-radius: 10px;
+}
+
+.btn {
+    background-color: #eee;
+    font-family: 'Press Start 2P', sans-serif;
+    font-size: 25px;
+    color: #333;
+    padding: 2rem; 
+    cursor: pointer; 
+    transition: 0.2s linear;
+}
+
+.btn:focus {
+    border-radius: 10px;
+}
+
+.made {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media (max-width: 767px) {
+    h1.made {
+        bottom: 80px;
+        /* font-size: px; */
+        text-align: center;    
+        left: 0%;
+        padding: 0 30px;
+        transform: translate(0%, 0);
+        margin-top: 40px;
+    }
+}
+
+.message span {
+    font-size: 3rem;
+}
+
+@media (max-width: 767px) {
+    .message span {
+        font-size: 2rem;
+    }
+}
